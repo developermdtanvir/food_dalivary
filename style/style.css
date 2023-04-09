@@ -2,3 +2,10 @@
     background-image: url('../images/background_image.png');
     background-position: left;
 }
+
+.footer-bg {
+    background-image: url('../images/footer.svg');
+    background-size: cover;
+}
+
+

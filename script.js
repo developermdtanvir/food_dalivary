@@ -1,6 +1,6 @@
 const product = document.getElementById('product');
 
-fetch(`http://localhost:5000/foods`)
+fetch(`https://product-backend-mdtanvirgit.vercel.app/foods`)
     .then(res => res.json())
     .then(data => {
         displayFoods(data)
@@ -30,7 +30,7 @@ document.getElementById('search_btn').addEventListener('click', () => {
     const search = document.getElementById('search').value
 
 
-    fetch(`http://localhost:5000/foods?search=${search}`)
+    fetch(`https://product-backend-mdtanvirgit.vercel.app/foods?search=${search}`)
         .then(res => res.json())
         .then(data => {
             displayFoods(data)
